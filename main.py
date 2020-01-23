@@ -9,45 +9,53 @@ from dataclasses import dataclass
 
 class Operation:
     # Add
-    name=''
-    execute_op = partial(np.add)
-    def execute(img_array, constraint_array):
-        return execute_op(constraint_array, img_array)
+    def __init__(self):
+        self.name = 'add'
+        self.execute_op = partial(np.add)
+
+    def execute(self, img_array, constraint_array):
+        return self.execute_op(constraint_array, img_array)
+
 
 class SubtractOperation(Operation):
     execute_op = partial(np.subtract)
 
-class MinOperation:
-    # Floor
-    min=0
-    execute_op = partial(np.clip, min=min)
 
-class RoundOperation:
-    execute_op = partial(np.around, decimals=2)
+class MinOperation(Operation):
+    # Floor
+    def __init__(self, min=0):
+        self.min = min
+        self.execute_op = partial(np.clip, min=min)
+
+
+class RoundOperation(Operation):
+    def __init__(self):
+        self.execute_op = partial(np.around, decimals=2)
+
 
 class Constraint:
-    name=''
-    sort_order=0
-    image=''
-    weight=1
-    operation=None
-    operationProps={}
+    constraint_op = None
 
-    def __init__(super, img_array):
-        pass
+    def __init__(self, name, img_array, operation, operation_props, sort_order=0, weight=1):
+        self.name = name
+        self.img_array = img_array
+        self.sort_order = sort_order
+        self.weight = weight
+        self.operation = operation
+        self.operation_props = operation_props
+        self.constraint_op = Operation()
+
 
 class MultiConstraint(Constraint):
     # like a single constraint but for a directory/path
-    name=''
-    sort_order=0
-    path=''
-    weight=1
-    operation=None
 
-    def execute():
+    def __init__(self, path):
+        self.path = path
+
+    def execute(self):
         for image_path in glob.glob("/home/adam/*.png"):
             im = imageio.imread('my_image.png')
-            operation.execute(im)
+            self.constraint_op.execute(im)
 
 
 @dataclass
@@ -61,9 +69,10 @@ class ConstraintsConfig:
 
 
 def read_constraints(constraint_json):
-    constraints = json.loads(constraint_json)
-    con = [Constraint(**c) for c in constraints['constraints']]
-    return con
+    with open(constraint_json) as file:
+        c_json = json.load(file, encoding='utf8')
+        constraints = [jsons.load(c, Constraint) for c in c_json['constraints']]
+        return constraints
 
 
 def read_layers():
@@ -73,7 +82,7 @@ def read_layers():
     con_arrays = sorted([(c.image, c.sort_order) for c in constraints],
         key=lambda x: x[1])
     # np.dot(a,weights) but with multiple
-    return numpy.linalg.multi_dot(con_arrays, weighted_sum)
+    return np.linalg.multi_dot(con_arrays, weighted_sum)
 
 
 def write_output(img_array, output_path):
