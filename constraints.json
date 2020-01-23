@@ -1,0 +1,12 @@
+{
+    "constraints" : [
+        {
+            "name": "",
+            "sort_order": 1,
+            "image": "",
+            "weight": 1,
+            "operation": "Add",
+            "operation_props": {}
+        }
+    ]
+}
