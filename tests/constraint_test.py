@@ -1,6 +1,6 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
-from main import Operation
+from constraintsmap import Operation
 import numpy as np
 
 
@@ -12,9 +12,20 @@ def test_can_add():
     assert result[0] == [2, 2, 2, 2]
 
 
-def test_weighted_sum():    
+def test_weighted_sum():
     first = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
     weight = 4
-    weight_array = np.full(first.shape, weight)
-    result = np.dot(first, weight_array)
+    # weight_array = np.full((first.shape[0],), weight)
+    # result = np.dot(first, weight_array)
+    result = first * weight
+    assert result[0] == [4, 4, 4, 4]
+
+
+def test_weighted_sums():
+    first = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
+    second = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
+    weights = [4, 5]
+    # weight_array = np.full((first.shape[0],), weight)
+    # result = np.dot(first, weight_array)
+    result = np.array([first, second]) * weights
     assert result[0] == [4, 4, 4, 4]

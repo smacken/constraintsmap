@@ -1,6 +1,6 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
-from main import read_config, read_constraints
+from constraintsmap import read_config, read_constraints
 
 
 def test_init():

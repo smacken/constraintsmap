@@ -3,6 +3,7 @@ import imageio
 import json
 import jsons
 import numpy as np
+import uuid
 from functools import partial
 from dataclasses import dataclass
 
@@ -28,6 +29,13 @@ class MinOperation(Operation):
         self.execute_op = partial(np.clip, min=min)
 
 
+class MaxOperation(Operation):
+    # ceiling
+    def __init__(self, max=0):
+        self.max = max
+        self.execute_op = partial(np.clip, max=max)
+
+
 class RoundOperation(Operation):
     def __init__(self):
         self.execute_op = partial(np.around, decimals=2)
@@ -37,13 +45,20 @@ class Constraint:
     constraint_op = None
 
     def __init__(self, name, img_array, operation, operation_props, sort_order=0, weight=1):
+        self.id = str(uuid.uuid4())
         self.name = name
         self.img_array = img_array
         self.sort_order = sort_order
         self.weight = weight
         self.operation = operation
         self.operation_props = operation_props
-        self.constraint_op = Operation()
+        ops = {
+            'add': Operation(),
+            'subtract': SubtractOperation(),
+            'round': RoundOperation(),
+            'min': MinOperation(**operation_props)
+        }
+        self.constraint_op = ops[operation.lower()] if operation.lower() in ops else Operation()
 
 
 class MultiConstraint(Constraint):
