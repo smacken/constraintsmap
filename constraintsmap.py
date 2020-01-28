@@ -6,6 +6,7 @@ import numpy as np
 import uuid
 from functools import partial
 from dataclasses import dataclass
+from typing import Optional, Union
 
 
 class Operation:
@@ -19,7 +20,10 @@ class Operation:
 
 
 class SubtractOperation(Operation):
-    execute_op = partial(np.subtract)
+    def __init__(self):
+        self.name = 'subtract'
+        self.execute_op = partial(np.subtract)
+        super(SubtractOperation, self).__init__()
 
 
 class MinOperation(Operation):
@@ -27,6 +31,7 @@ class MinOperation(Operation):
     def __init__(self, min=0):
         self.min = min
         self.execute_op = partial(np.clip, min=min)
+        super(MinOperation, self).__init__()
 
 
 class MaxOperation(Operation):
@@ -34,11 +39,13 @@ class MaxOperation(Operation):
     def __init__(self, max=0):
         self.max = max
         self.execute_op = partial(np.clip, max=max)
+        super(MaxOperation, self).__init__()
 
 
 class RoundOperation(Operation):
     def __init__(self):
         self.execute_op = partial(np.around, decimals=2)
+        super(RoundOperation, self).__init__()
 
 
 class Constraint:
@@ -86,7 +93,7 @@ class ConstraintsConfig:
 def read_constraints(constraint_json):
     with open(constraint_json) as file:
         c_json = json.load(file, encoding='utf8')
-        constraints = [jsons.load(c, Constraint) for c in c_json['constraints']]
+        constraints = [jsons.load(c, Union[Constraint, BufferConstraint, MultiConstraint]) for c in c_json['constraints']]
         return constraints
 
 

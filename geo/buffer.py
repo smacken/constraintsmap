@@ -12,11 +12,24 @@ class BufferEnd(Enum):
     FLAT = 2
     SQUARE = 3
 
+
 cap_style = {
     BufferEnd.ROUND: CAP_STYLE.round,
     BufferEnd.FLAT: CAP_STYLE.flat,
     BufferEnd.SQUARE: CAP_STYLE.square
 }
+
+''' Buffer constraint example json
+{
+    "id":"",
+    "name": "",
+    "sort_order": 1,
+    "image": "",
+    "weight": 1,
+    "operation": "Add",
+    "operation_props": {}
+}'''
+
 
 class BufferConstraint(Constraint):
     ''' Create a buffered constraint around a vector '''
