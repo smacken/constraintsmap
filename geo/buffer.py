@@ -35,7 +35,7 @@ class BufferConstraint(Constraint):
     ''' Create a buffered constraint around a vector '''
 
     @classmethod
-    def init_create_geometry(shp_file, buffer_size, buffer_end):
+    def init_create_geometry(shp_file, buffer_size, buffer_end=BufferEnd.ROUND):
         ''' convert the shape file to a geometry object '''
         input_shp = fiona.open(shp_file)
         shp = input_shp.next()

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xalan="http://xml.apache.org/xalan" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.isotc211.org/2005/gmd">
+<fileIdentifier>
+<gco:CharacterString>efd81eb363aa4e979662f50ab00ec19f</gco:CharacterString>
+</fileIdentifier>
+<language>
+<LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+</language>
+<characterSet>
+<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+</characterSet>
+<hierarchyLevel>
+<MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+</hierarchyLevel>
+<contact>
+<CI_ResponsibleParty>
+<individualName>
+<gco:CharacterString>HSIP Team</gco:CharacterString>
+</individualName>
+<organisationName>
+<gco:CharacterString>National Geospatial-Intelligence Agency</gco:CharacterString>
+</organisationName>
+<contactInfo>
+<CI_Contact>
+<address>
+<CI_Address>
+<deliveryPoint>
+<gco:CharacterString>7500 GeoInt Dr.</gco:CharacterString>
+</deliveryPoint>
+<city>
+<gco:CharacterString>Springfield</gco:CharacterString>
+</city>
+<administrativeArea>
+<gco:CharacterString>Virginia</gco:CharacterString>
+</administrativeArea>
+<postalCode>
+<gco:CharacterString>22150</gco:CharacterString>
+</postalCode>
+<country>
+<Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+</country>
+<electronicMailAddress>
+<gco:CharacterString>hsip_team@nga.mil</gco:CharacterString>
+</electronicMailAddress>
+</CI_Address>
+</address>
+</CI_Contact>
+</contactInfo>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</contact>
+<dateStamp>
+<gco:Date>2012-01-13</gco:Date>
+</dateStamp>
+<metadataStandardName>
+<gco:CharacterString>NAP - Metadata</gco:CharacterString>
+</metadataStandardName>
+<metadataStandardVersion>
+<gco:CharacterString>1.2</gco:CharacterString>
+</metadataStandardVersion>
+<spatialRepresentationInfo>
+<MD_VectorSpatialRepresentation>
+<geometricObjects>
+<MD_GeometricObjects>
+<geometricObjectType gco:nilReason="missing"/>
+<geometricObjectCount>
+<gco:Integer>74</gco:Integer>
+</geometricObjectCount>
+</MD_GeometricObjects>
+</geometricObjects>
+</MD_VectorSpatialRepresentation>
+</spatialRepresentationInfo>
+<referenceSystemInfo gco:nilReason="missing"/>
+<identificationInfo>
+<MD_DataIdentification>
+<citation>
+<CI_Citation>
+<title>
+<gco:CharacterString>State Fairgrounds</gco:CharacterString>
+</title>
+<date gco:nilReason="missing"/>
+<citedResponsibleParty>
+<CI_ResponsibleParty>
+<organisationName>
+<gco:CharacterString>NGA PMHP</gco:CharacterString>
+</organisationName>
+<contactInfo gco:nilReason="missing"/>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator" codeSpace="ISOTC211/19115">originator</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</citedResponsibleParty>
+<presentationForm>
+<CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</CI_PresentationFormCode>
+</presentationForm>
+</CI_Citation>
+</citation>
+<abstract>
+<gco:CharacterString>This dataset represents the locations of the major state/regional agricultural fairs held throughout the United States. This dataset displays the locations and other pertinent information about the state level agricultural fairs held throughout the United States. It aids in providing the situational awareness for the agricultural sector, as well as the high value symbolic sector. Not only are the fairs gathering places for large numbers of livestock that then disperse, but large numbers of people congregate at these fairs. Additionally, other events--such as gun shows, arts &amp; crafts shows, trade shows, etc.--are held at the fairgrounds locations through the year.Some states (e.g., Alaska) have multiple state fairground sites. Hawaii holds its main state fair event at the Aloha Bowl, but does not have any other specific state fairground facility. Rhode Island and Connecticut do not hold specific state fair events--just regional events. In summary, 47 states have at least 1 record within this database, while Hawaii, Connecticut, and Rhode Island are not represented. There are no state fair events represented in any of the major U.S. territories (e.g., Puerto Rico).</gco:CharacterString>
+</abstract>
+<purpose>
+<gco:CharacterString>This dataset represents the locations of the major state/regional agricultural fairs held throughout the United States.</gco:CharacterString>
+</purpose>
+<status>
+<MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed" codeSpace="ISOTC211/19115">completed</MD_ProgressCode>
+</status>
+<pointOfContact>
+<CI_ResponsibleParty>
+<individualName>
+<gco:CharacterString>HSIP Team</gco:CharacterString>
+</individualName>
+<organisationName>
+<gco:CharacterString>National Geospatial-Intelligence Agency</gco:CharacterString>
+</organisationName>
+<positionName>
+<gco:CharacterString>Database Administrator</gco:CharacterString>
+</positionName>
+<contactInfo>
+<CI_Contact>
+<address>
+<CI_Address>
+<deliveryPoint>
+<gco:CharacterString>7500 GeoInt Dr.</gco:CharacterString>
+</deliveryPoint>
+<city>
+<gco:CharacterString>Springfield</gco:CharacterString>
+</city>
+<administrativeArea>
+<gco:CharacterString>Virginia</gco:CharacterString>
+</administrativeArea>
+<postalCode>
+<gco:CharacterString>22150</gco:CharacterString>
+</postalCode>
+<country>
+<Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+</country>
+<electronicMailAddress>
+<gco:CharacterString>hsip_team@nga.mil</gco:CharacterString>
+</electronicMailAddress>
+</CI_Address>
+</address>
+<hoursOfService>
+<gco:CharacterString>0800 - 1700 EST</gco:CharacterString>
+</hoursOfService>
+<contactInstructions>
+<gco:CharacterString>Any authorized HSIP Gold recipient can provide feedback to the HSIP Gold data by using the Feedback Mechanism provided on the HIFLD working group website (http://www.hifldwg.org/feedbackMechanism/gold/)</gco:CharacterString>
+</contactInstructions>
+</CI_Contact>
+</contactInfo>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</pointOfContact>
+<resourceMaintenance>
+<MD_MaintenanceInformation>
+<maintenanceAndUpdateFrequency>
+<MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded" codeSpace="ISOTC211/19115">asNeeded</MD_MaintenanceFrequencyCode>
+</maintenanceAndUpdateFrequency>
+</MD_MaintenanceInformation>
+</resourceMaintenance>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>United States</gco:CharacterString>
+</keyword>
+<type>
+<MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+</type>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>United States</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Public Venues</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Livestock</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>State Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Agriculture</gco:CharacterString>
+</keyword>
+<type>
+<MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+</type>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>United States</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Public Venues</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Livestock</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>State Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Agriculture</gco:CharacterString>
+</keyword>
+<type>
+<MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+</type>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>United States</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Public Venues</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Livestock</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>State Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Agriculture</gco:CharacterString>
+</keyword>
+<type>
+<MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+</type>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>United States</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Public Venues</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Livestock</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>State Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Agriculture</gco:CharacterString>
+</keyword>
+<type>
+<MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+</type>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>United States</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Public Venues</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Livestock</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>State Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Agriculture</gco:CharacterString>
+</keyword>
+<type>
+<MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+</type>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>United States</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Public Venues</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Livestock</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>State Fairgrounds</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Agriculture</gco:CharacterString>
+</keyword>
+<type>
+<MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+</type>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Downloadable Data</gco:CharacterString>
+</keyword>
+<thesaurusName uuidref="723f6998-058e-11dc-8314-0800200c9a66"/>
+</MD_Keywords>
+</descriptiveKeywords>
+<resourceConstraints>
+<MD_Constraints>
+<useLimitation>
+<gco:CharacterString>Access Constraint: None (Public Domain Information)
+
+Use Constraint: None (Public Use)</gco:CharacterString>
+</useLimitation>
+</MD_Constraints>
+</resourceConstraints>
+<resourceConstraints>
+<MD_Constraints>
+<useLimitation>
+<gco:CharacterString>None (Public Use)</gco:CharacterString>
+</useLimitation>
+</MD_Constraints>
+</resourceConstraints>
+<resourceConstraints>
+<MD_SecurityConstraints>
+<classification>
+<MD_ClassificationCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified" codeSpace="ISOTC211/19115">unclassified</MD_ClassificationCode>
+</classification>
+</MD_SecurityConstraints>
+</resourceConstraints>
+<spatialRepresentationType>
+<MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</MD_SpatialRepresentationTypeCode>
+</spatialRepresentationType>
+<language>
+<LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+</language>
+<characterSet>
+<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+</characterSet>
+<topicCategory>
+<MD_TopicCategoryCode>farming</MD_TopicCategoryCode>
+</topicCategory>
+<environmentDescription>
+<gco:CharacterString>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3000</gco:CharacterString>
+</environmentDescription>
+<extent>
+<EX_Extent>
+<description>
+<gco:CharacterString>13 January 2012</gco:CharacterString>
+</description>
+</EX_Extent>
+</extent>
+<extent>
+<EX_Extent>
+<geographicElement>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>
+<gco:Decimal>-151.677536</gco:Decimal>
+</westBoundLongitude>
+<eastBoundLongitude>
+<gco:Decimal>-68.782512</gco:Decimal>
+</eastBoundLongitude>
+<southBoundLatitude>
+<gco:Decimal>27.9894</gco:Decimal>
+</southBoundLatitude>
+<northBoundLatitude>
+<gco:Decimal>64.863674</gco:Decimal>
+</northBoundLatitude>
+</EX_GeographicBoundingBox>
+</geographicElement>
+</EX_Extent>
+</extent>
+</MD_DataIdentification>
+</identificationInfo>
+<distributionInfo>
+<MD_Distribution>
+<distributor>
+<MD_Distributor>
+<distributorContact>
+<CI_ResponsibleParty>
+<individualName>
+<gco:CharacterString>HSIP Team</gco:CharacterString>
+</individualName>
+<organisationName>
+<gco:CharacterString>National Geospatial-Intelligence Agency</gco:CharacterString>
+</organisationName>
+<positionName>
+<gco:CharacterString>Database Administrator</gco:CharacterString>
+</positionName>
+<contactInfo>
+<CI_Contact>
+<address>
+<CI_Address>
+<deliveryPoint>
+<gco:CharacterString>7500 GeoInt Dr.</gco:CharacterString>
+</deliveryPoint>
+<city>
+<gco:CharacterString>Springfield</gco:CharacterString>
+</city>
+<administrativeArea>
+<gco:CharacterString>VA</gco:CharacterString>
+</administrativeArea>
+<postalCode>
+<gco:CharacterString>22150</gco:CharacterString>
+</postalCode>
+<country>
+<Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+</country>
+<electronicMailAddress>
+<gco:CharacterString>hsip_team@nga.mil</gco:CharacterString>
+</electronicMailAddress>
+</CI_Address>
+</address>
+<hoursOfService>
+<gco:CharacterString>0800 - 1700 EST</gco:CharacterString>
+</hoursOfService>
+<contactInstructions>
+<gco:CharacterString>Any authorized HSIP Gold recipient can provide feedback to the HSIP Gold data by using the Feedback Mechanism provided on the HIFLD working group website (http://www.hifldwg.org/feedbackMechanism/gold/)</gco:CharacterString>
+</contactInstructions>
+</CI_Contact>
+</contactInfo>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor" codeSpace="ISOTC211/19115">distributor</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</distributorContact>
+</MD_Distributor>
+</distributor>
+<distributionFormat gco:nilReason="missing"/>
+<transferOptions>
+<MD_DigitalTransferOptions/>
+</transferOptions>
+</MD_Distribution>
+</distributionInfo>
+<metadataConstraints>
+<MD_SecurityConstraints>
+<classification>
+<MD_ClassificationCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified" codeSpace="ISOTC211/19115">unclassified</MD_ClassificationCode>
+</classification>
+</MD_SecurityConstraints>
+</metadataConstraints>
+</MD_Metadata>

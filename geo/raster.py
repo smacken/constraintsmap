@@ -25,4 +25,4 @@ def to_raster(geometry, rows, cols, out_file='test.tif'):
 def to_raster_array(geometry, rows, cols):
     with rasterio.Env():
         result = rasterize([geometry], out_shape=(rows, cols))
-        return result.astype(np.uint8), indexes=1)
+        return result.astype(np.uint8)
