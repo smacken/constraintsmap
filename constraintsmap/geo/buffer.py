@@ -1,10 +1,10 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
 from enum import Enum
-from constraintsmap import Constraint, Operation
-from .raster import to_raster_array
 import fiona
 from shapely.geometry import shape, CAP_STYLE
+from constraintsmap.constraint.constraints import Constraint, Operation
+from .raster import to_raster_array
 
 
 class BufferEnd(Enum):
