@@ -2,6 +2,7 @@ from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
 from constraintsmap.constraint.operation import Operation
 import numpy as np
+from numpy.linalg import multi_dot
 
 
 def test_can_add():
@@ -9,23 +10,21 @@ def test_can_add():
     first = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
     second = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
     result = op.execute(first, second)
-    assert result[0] == [2, 2, 2, 2]
+    assert np.all([result[0], [2, 2, 2, 2]])
 
 
 def test_weighted_sum():
     first = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
     weight = 4
-    # weight_array = np.full((first.shape[0],), weight)
-    # result = np.dot(first, weight_array)
     result = first * weight
-    assert result[0] == [4, 4, 4, 4]
+    assert np.all([result[0], [4, 4, 4, 4]])
 
 
 def test_weighted_sums():
     first = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
     second = np.array([[1, 1, 1, 1], [1, 1, 1, 1]])
     weights = [4, 5]
-    # weight_array = np.full((first.shape[0],), weight)
-    # result = np.dot(first, weight_array)
-    result = np.array([first, second]) * weights
-    assert result[0] == [4, 4, 4, 4]
+    weighted_sum = [a * weights[i] for i, a in enumerate([first, second])]
+    result = Operation().execute(weighted_sum[0], weighted_sum[1])
+    assert np.all([result[0], [4, 4, 4, 4]])
+    assert np.all([result[1], [5, 5, 5, 5]])    

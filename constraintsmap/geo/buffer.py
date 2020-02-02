@@ -37,11 +37,11 @@ class BufferConstraint(Constraint):
     @classmethod
     def init_create_geometry(shp_file, buffer_size, buffer_end=BufferEnd.ROUND):
         ''' convert the shape file to a geometry object '''
-        input_shp = fiona.open(shp_file)
-        shp = input_shp.next()
-        shp_geo = shape(shp['geometry'])
-        buffer_geo = shp_geo.buffer(buffer_size, cap_style=cap_style[buffer_end.lower()])
-        return buffer_geo
+        with fiona.open(shp_file) as input_shp:
+            shp = input_shp.next()
+            shp_geo = shape(shp['geometry'])
+            buffer_geo = shp_geo.buffer(buffer_size, cap_style=cap_style[buffer_end.lower()])
+            return buffer_geo
 
     def __init__(self, shp_file, buffer_size, buffer_end=BufferEnd.ROUND, weight=1, sort_order=0):
         self.constraint_op = Operation()

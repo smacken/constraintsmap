@@ -9,7 +9,7 @@ from constraintsmap.geo.buffer import BufferConstraint
 #     assert 1 == 1
 
 def test_to_raster_array():
-    geo = BufferConstraint.init_create_geometry('./constrainstmap/tests/data/State_Fairgrounds.shp', 10)
+    geo = BufferConstraint.init_create_geometry('constrainstmap/tests/data/State_Fairgrounds.shp', 10)
     ras_arr = to_raster_array(geo, 100, 100)
     assert ras_arr is not None
 
